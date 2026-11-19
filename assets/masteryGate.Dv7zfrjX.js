@@ -1,0 +1,1 @@
+function e(e,t,n){if(!Number.isFinite(t)||t<1||!Number.isFinite(e)||e<0)return!1;let r=n?.threshold??.6;return e/t>=r}function t(t,n){if(!e(t,n))return 0;let r=t/n;return r>=.95?3:r>=.8?2:1}export{e as n,t};
