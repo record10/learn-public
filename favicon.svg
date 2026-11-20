@@ -1,10 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1"/>
-      <stop offset="100%" style="stop-color:#818cf8"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE68A"/>
+      <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="20" fill="url(#grad)"/>
-  <text x="50" y="68" font-size="50" text-anchor="middle" fill="white">📚</text>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M256 392C218 358 146 350 88 366V204C146 188 218 196 256 232Z" fill="#FFFFFF"/>
+  <path d="M256 392C294 358 366 350 424 366V204C366 188 294 196 256 232Z" fill="#E0E7FF"/>
+  <path d="M256 232V392" stroke="#A5B4FC" stroke-width="8" stroke-linecap="round"/>
+  <path d="M256 72L274 118L320 136L274 154L256 200L238 154L192 136L238 118Z" fill="url(#spark)"/>
+  <circle cx="352" cy="108" r="12" fill="#FDE68A"/>
+  <circle cx="160" cy="116" r="8" fill="#FDE68A" opacity=".8"/>
 </svg>
